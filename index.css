@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; /*make sure everything we put in the body is align center horizontally. This will not work without flex property*/
+    height: 100vh; /*now the body is gonna be the full height of our viewport*/ 
+    align-items: center;/*align vertically. This property will not work without the height*/
+}
+.title{
+    margin-top: -500px;
+    position: absolute;
+    font-size: 3rem;
+
+}
+
+#piano {
+    height: 290px;
+    padding: 90px 30px 0 30px;
+    background-color: #fc8989;
+    border-radius: 10px;
+}
+
+.keys {
+    position: relative; /*we're gonna use the positioning to position keys that live inside the div with class of keys*/
+}
+
+.white-keys{ /*div that contains all the white keys*/
+ display: flex; /*in order form the key to appear next to each other*/
+}
+
+.black-keys{ /*div that hold all black keys*/
+  position: relative;
+  display: flex;
+}
+.white-key{
+    width: 68px;
+    height: 280px;
+    border-radius: 0 0 5px 5px;
+    border: solid #000 2px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.black-key{
+    width:38px;
+    height:160px;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    position: absolute; /*coz we're gonna have to position each one to be exactly a positioning inside the black keys div container
+    which has a position of relative*/
+    background-color: #000;
+}
+
+.black-key:nth-child(1){ /*position of first child*/
+    left: 48px;
+}
+
+.black-key:nth-child(2){ /*position of second child*/
+    left: 117px;
+}
+
+.black-key:nth-child(3){ /*position of second child*/
+    left: 253px;
+}
+
+.black-key:nth-child(4){ /*position of second child*/
+    left: 320px;
+}
+.black-key:nth-child(5){ /*position of second child*/
+    left: 389px;
+}
+
+.black-key:nth-child(6){ /*position of second child*/
+    left: 525px;
+}
+.black-key:nth-child(7){ /*position of second child*/
+    left: 594px;
+}
+.black-key:nth-child(8){ /*position of second child*/
+    left: 662px;
+}
+.black-key:nth-child(9){ /*position of second child*/
+    left: 797px;
+}
+.black-key:nth-child(10){ /*position of second child*/
+    left: 865px;
+}
